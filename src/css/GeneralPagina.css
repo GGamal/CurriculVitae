@@ -1,0 +1,394 @@
+body{
+    background-image: url("./../../public/img/fondo2.png") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+}
+
+.conth {
+    width: 80vw;
+    color: white;
+    
+    /* background-color: #0e0018; */
+
+}
+
+.presentacion {
+    text-align: left;
+    padding-top: 8rem;
+
+}
+
+.soy {
+    font-size: 2rem;
+
+}
+
+
+.nombre {
+    margin-top: 0;
+    font-size: 6rem;
+    color: rgb(36, 255, 255);
+    -webkit-text-stroke: 0.20rem;
+    -webkit-text-stroke-color: rgb(36, 255, 255, 0.5);
+    margin-bottom: 0;
+    margin-bottom: 1rem;
+
+}
+
+.bienvenidos {
+
+    margin: 0rem 0rem 1.75rem 3rem;
+    color: gold;
+    -webkit-text-stroke: 0.20rem;
+    -webkit-text-stroke-color: rgba(255, 217, 0, 0.5);
+    /* filter: drop-shadow(1rem 1rem 1rem white); */
+
+}
+
+.linkedin {
+    padding: 1rem;
+    background-color: rgb(73, 73, 255);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 5rem;
+
+
+}
+
+
+
+.nombre,
+.bienvenidos,
+.soy {
+    transition: ease 0.3s;
+
+}
+
+.nombre:hover,
+.bienvenidos:hover,
+.soy:hover {
+    transition: ease 0.3s;
+    transform: scale(1.01);
+
+}
+
+.sobremi {
+    padding-top: 6rem;
+    text-align: left;
+
+}
+
+.sobremi h1 {
+    font-size: 3rem;
+    /* color: blueviolet;
+    -webkit-text-stroke: 0.20rem;
+    -webkit-text-stroke-color: rgba(137, 43, 226, 0.5); */
+    color: rgb(31, 255, 124);
+    -webkit-text-stroke: 0.20rem;
+    -webkit-text-stroke-color:rgba(31, 255, 98, 0.5);
+
+}
+
+.sobremi h3{
+    color:  rgb(36, 255, 255);
+}
+
+/* ACA EMPIEZA LA SECCION PORFOLIO */
+
+.porta,
+.educacion,
+.skills {
+    height: 75%;
+    padding-top: 10rem;
+
+}
+
+.porfolio,
+.estudios,
+.habilidades,
+.contactame {
+    font-size: 3rem;
+    color: rgb(31, 255, 124);
+    -webkit-text-stroke: 0.20rem;
+    -webkit-text-stroke-color:rgba(31, 255, 124, 0.5);
+}
+
+.tarjetas {
+    margin-top: 10rem;
+    display: flex;
+
+}
+
+.card {
+    box-sizing: border-box;
+    max-width: 50%;
+    max-height: 25%;
+    margin-right: 2rem;
+    text-align: left;
+    padding: 2rem;
+    border: 0.5rem outset rgb(36, 255, 255);
+    border-radius: 1rem;
+    background-color: #0e0018cb;
+    transition:linear 0.3s;
+
+}
+
+.card:hover{
+    transition:linear 0.3s;
+    transform: scale(1.1);
+}
+
+.card:first-child {
+    margin-left: 5rem;
+}
+
+.card img {
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 0.5rem;
+
+}
+
+.card h4 {
+    color: rgb(73, 73, 255);
+}
+
+.card p {
+    font-size: 0.8em;
+}
+
+/* SECCION ESTUDIOS */
+
+.estudios {
+    margin-bottom: 5rem;
+}
+
+.estudio h1 {
+    color: rgb(73, 73, 255);
+
+}
+
+.estudio h3 {
+    color: rgb(36, 255, 255);
+}
+
+.estudio,
+.contskills {
+    padding-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+/* HABILIDADES */
+
+.programacion,
+.fra_y_lib,
+.soft_y_herra {
+    color: rgb(36, 255, 255);
+    padding-top: 2rem;
+}
+
+.lenguajes {
+    display: flex;
+}
+
+.lenguajes img {
+    transition: ease 0.3s;
+    width: 5%;
+}
+
+.lenguajes img:hover {
+    transition: ease 0.3s;
+    transform: scale(1.1);
+}
+
+
+/* SECCION CONTACTO */
+
+.contacto {
+    padding-top: 10rem;
+    margin-bottom: 15rem;
+
+}
+
+.contacto img {
+    width: 48px;
+    height: 48px;
+
+}
+
+.contactos h3 {
+    margin-left: 1rem;
+    color: rgb(36, 255, 255);
+
+
+}
+
+.contactos {
+    display: flex;
+    padding: 1rem;
+}
+
+.linkedin2 {
+    text-decoration: none;
+    color: rgb(36, 255, 255);
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.descarga {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    background-color: rgb(36, 255, 255);
+    border-color: rgb(36, 255, 255, 0.5);
+}
+
+.descarga:hover {
+    color: gold;
+}
+
+
+
+
+
+@media(max-width: 420px) {
+
+    .linkedin{
+        display: none;
+    }
+
+    .conth {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conth section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .presentacion {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .nombre {
+        font-size: 3.3rem;
+
+    }
+
+    .bienvenidos {
+        margin-left: 0;
+    }
+
+    .linkedin {
+        margin-left: 0;
+    }
+
+    .sobremi {
+        padding-top: 6rem;
+        text-align: center;
+
+    }
+
+    .tarjetas {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .card {
+        
+        max-width: 100%;
+        max-height: 25%;
+        margin-right: 0rem;
+        text-align: center;
+        padding: 1rem;
+        border: 0.5rem solid rgb(36, 255, 255);
+        border-style: ridge;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+
+    }
+    .card p{
+        font-size: 0.5rem;
+    }
+    .card h4{
+        font-size: 0.8rem;
+    }
+
+    .card:first-child {
+        margin-left: 0rem;
+    }
+
+    .estudio,
+    .contskills {
+        padding-bottom: 2rem;
+        margin-left: 0rem;
+    }
+
+    .lenguajes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lenguajes img {
+        transition: ease 0.3s;
+        width: 20%;
+    }
+
+    .contactos {
+        align-items: center;
+        flex-direction: column;
+       padding: 0;
+    }
+
+    .email {
+        font-size: 0.9rem;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .descarga {
+        font-size: 1rem;
+        padding: 0.75rem;
+        border-radius: 1rem;
+        text-decoration: none;
+        background-color: rgb(36, 255, 255);
+        margin-left: 0rem;
+        border-color: rgb(36, 255, 255, 0.5);
+    }
+
+    .porfolio,
+    .estudios {
+        font-size: 2.5rem;
+        text-align: center;
+        
+    }
+
+    .contactame {
+        font-size: 2rem;
+        text-align: center;
+       
+    }
+    .habilidades{
+        font-size: 1.9rem;
+    }
+
+    
+
+}

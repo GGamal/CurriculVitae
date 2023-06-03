@@ -1,5 +1,20 @@
+
+/* font-family: 'Press Start 2P', cursive; */
+
+*{
+  /* background-color: #0e0018; */
+  font-family: 'Press Start 2P', cursive;
+
+}
+
+.holder{
+  margin: 0 auto;
+
+}
+
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
