@@ -36,7 +36,7 @@ const GeneralPagina = (props) => {
                 <div className="tarjetas">
 
                     <div className="card">
-                        <img className="proyectosimg" src="img/phanteonc.jpg" alt="" ></img>
+                        <img className="proyectosimg" src="img/desokupa.jpg" alt="" ></img>
                         <h4>Desokupa</h4>
                     <p>Esta es la pagina web de gestion interna de la empresa para la que trabaje, es una readpatacion de una
                          pagina vieja del 2019 llamda "Desokupa" que era para gestionar tramites y contratos para ayudarte a recuperar tu casa si estaba ocupada</p>
@@ -72,10 +72,9 @@ const GeneralPagina = (props) => {
                     </div>
 
                     <div className="card">
-                        <img className="proyectosimg" src="img/phanteon.jpg" alt="" ></img>
-                        <h4>tituloooo</h4>
-                        <p>Loremaasddddddd</p>
-                        <p>asdasssssssssssd</p>
+                        <img className="proyectosimg" src="img/proximamente.png" alt="" ></img>
+                        <h4>Proximamente</h4>
+                        <p>Proximamente</p>
                         <div className="github">
                         <div>
                            <a href="https://github.com/GGamal/CurriculVitae" target="_blank" rel="noreferrer"><img className="git" src="img/iconos/mark.png" alt=""/></a>
