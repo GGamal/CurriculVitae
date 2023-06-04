@@ -1,5 +1,5 @@
 body{
-    background-image: url("./../../public/img/fondo2.png") ;
+    background-image: url("./../../public/img/negro1.jpg") ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     
@@ -8,9 +8,8 @@ body{
 
 .conth {
     width: 80vw;
-    color: white;
+    color: whitesmoke;
     
-    /* background-color: #0e0018; */
 
 }
 
@@ -22,6 +21,7 @@ body{
 
 .soy {
     font-size: 2rem;
+    text-shadow: 0 0 5px whitesmoke, 0 0 10px whitesmoke, 0 0 15px whitesmoke;
 
 }
 
@@ -29,22 +29,50 @@ body{
 .nombre {
     margin-top: 0;
     font-size: 6rem;
-    color: rgb(36, 255, 255);
-    -webkit-text-stroke: 0.20rem;
-    -webkit-text-stroke-color: rgb(36, 255, 255, 0.5);
+    color: rgb(134, 255, 255);
+    text-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua ;
     margin-bottom: 0;
     margin-bottom: 1rem;
+    animation: nombre 2s infinite backwards steps(1);
 
+}
+
+@keyframes nombre{
+    0%{
+        color: rgb(53, 121, 121);
+        text-shadow: none;
+    }
+
+    50%{
+        color:rgb(134, 255, 255) ;
+        text-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua ;
+
+    }
+
+    100%{
+        color: rgb(53, 121, 121);
+        text-shadow: none;
+    }
 }
 
 .bienvenidos {
 
     margin: 0rem 0rem 1.75rem 3rem;
-    color: gold;
-    -webkit-text-stroke: 0.20rem;
-    -webkit-text-stroke-color: rgba(255, 217, 0, 0.5);
+    color: rgb(255, 237, 137);
+    text-shadow: 0 0 5px rgb(255, 236, 130), 0 0 10px gold, 0 0 20px gold ;
+    display: flex;
     /* filter: drop-shadow(1rem 1rem 1rem white); */
 
+}
+.punto{
+    margin-left: 0;
+    animation: punto 1.5s infinite steps(1);
+}
+
+@keyframes punto{
+    0%{opacity: 100%;}
+    50%{opacity: 0%;}
+    100%{opacity: 100%;}
 }
 
 .linkedin {
@@ -84,17 +112,9 @@ body{
 
 .sobremi h1 {
     font-size: 3rem;
-    /* color: blueviolet;
-    -webkit-text-stroke: 0.20rem;
-    -webkit-text-stroke-color: rgba(137, 43, 226, 0.5); */
-    color: rgb(31, 255, 124);
-    -webkit-text-stroke: 0.20rem;
-    -webkit-text-stroke-color:rgba(31, 255, 98, 0.5);
+    color: rgb(138, 255, 187);
+    text-shadow: 0 0 5px  rgb(31, 255, 124), 0 0 10px  rgb(31, 255, 124), 0 0 15px  rgb(31, 255, 124);
 
-}
-
-.sobremi h3{
-    color:  rgb(36, 255, 255);
 }
 
 /* ACA EMPIEZA LA SECCION PORFOLIO */
@@ -112,9 +132,8 @@ body{
 .habilidades,
 .contactame {
     font-size: 3rem;
-    color: rgb(31, 255, 124);
-    -webkit-text-stroke: 0.20rem;
-    -webkit-text-stroke-color:rgba(31, 255, 124, 0.5);
+    color: rgb(138, 255, 187);
+    text-shadow: 0 0 5px  rgb(31, 255, 124), 0 0 10px  rgb(31, 255, 124), 0 0 15px  rgb(31, 255, 124);
 }
 
 .tarjetas {
@@ -125,12 +144,13 @@ body{
 
 .card {
     box-sizing: border-box;
-    max-width: 50%;
+    max-width: 30%;
     max-height: 25%;
     margin-right: 2rem;
     text-align: left;
     padding: 2rem;
-    border: 0.5rem outset rgb(36, 255, 255);
+    border: 2px solid whitesmoke;
+    box-shadow: inset 0 0 5px aqua, 0 0 10px aqua;
     border-radius: 1rem;
     background-color: #0e0018cb;
     transition:linear 0.3s;
@@ -139,14 +159,14 @@ body{
 
 .card:hover{
     transition:linear 0.3s;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .card:first-child {
     margin-left: 5rem;
 }
 
-.card img {
+.proyectosimg {
     object-fit: cover;
     max-width: 100%;
     border-radius: 0.5rem;
@@ -161,6 +181,30 @@ body{
     font-size: 0.8em;
 }
 
+.git{
+    width: 32px;
+    border-radius: 100%;
+
+}
+
+.github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+.github div{
+    flex-direction: column;
+    padding: 2%;
+    text-align: center;
+}
+
+.github div p{
+    padding: 1%;
+    text-align: center;
+}
+
 /* SECCION ESTUDIOS */
 
 .estudios {
@@ -172,9 +216,6 @@ body{
 
 }
 
-.estudio h3 {
-    color: rgb(36, 255, 255);
-}
 
 .estudio,
 .contskills {
@@ -187,7 +228,7 @@ body{
 .programacion,
 .fra_y_lib,
 .soft_y_herra {
-    color: rgb(36, 255, 255);
+    color: rgb(73, 73, 255);
     padding-top: 2rem;
 }
 
@@ -222,8 +263,6 @@ body{
 
 .contactos h3 {
     margin-left: 1rem;
-    color: rgb(36, 255, 255);
-
 
 }
 
@@ -233,24 +272,34 @@ body{
 }
 
 .linkedin2 {
+    color: whitesmoke;
     text-decoration: none;
-    color: rgb(36, 255, 255);
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
 .descarga {
+    color: whitesmoke;
     font-size: 1.5rem;
     padding: 0.75rem;
     border-radius: 1rem;
     text-decoration: none;
-    background-color: rgb(36, 255, 255);
-    border-color: rgb(36, 255, 255, 0.5);
+    background-color: rgb(73, 73, 255);
+    border: 1px solid whitesmoke;
+    box-shadow: inset 0 0 5px rgb(73, 73, 255), 0 0 10px  rgb(73, 73, 255), 0 0 15px rgb(73, 73, 255) ;
+    animation: descarga 2s infinite backwards steps(1);
 }
 
 .descarga:hover {
     color: gold;
+}
+
+@keyframes descarga{
+    0%{box-shadow: inset 0 0 5px rgb(73, 73, 255), 0 0 10px  rgb(73, 73, 255), 0 0 15px rgb(73, 73, 255);}
+    50%{box-shadow: none;}
+    100%{box-shadow: inset 0 0 5px rgb(73, 73, 255), 0 0 10px  rgb(73, 73, 255), 0 0 15px rgb(73, 73, 255);}
+    
 }
 
 
@@ -326,6 +375,10 @@ body{
     }
     .card h4{
         font-size: 0.8rem;
+    }
+
+    .git{
+        margin-left: 0%;
     }
 
     .card:first-child {

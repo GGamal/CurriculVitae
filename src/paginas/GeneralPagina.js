@@ -15,7 +15,7 @@ const GeneralPagina = (props) => {
 
                 <h1 className="soy">Soy</h1>
                 <h1 className="nombre">Gamal Maruan</h1>
-                <p className="bienvenidos">BIENVENIDOS A MI PORFOLIO COMO DESARROLLADOR FRONT END</p>
+                <p className="bienvenidos">BIENVENIDOS A MI PORFOLIO COMO DESARROLLADOR FRONT END <p className="bienvenidos punto">.</p></p>
                 <NavLink className="linkedin" to="https://www.linkedin.com/in/gamal-maruan-5416b2224/" target="_blank">in</NavLink>
 
                 <div className="sobremi">
@@ -36,27 +36,52 @@ const GeneralPagina = (props) => {
                 <div className="tarjetas">
 
                     <div className="card">
-                        <img src="img/phanteonc.jpg" alt="" ></img>
+                        <img className="proyectosimg" src="img/phanteonc.jpg" alt="" ></img>
                         <h4>Desokupa</h4>
-                        <p>Loremaasddddd</p>
-                        <p>asdassssssssssss</p>
+                    <p>Esta es la pagina web de gestion interna de la empresa para la que trabaje, es una readpatacion de una
+                         pagina vieja del 2019 llamda "Desokupa" que era para gestionar tramites y contratos para ayudarte a recuperar tu casa si estaba ocupada</p>
 
+                         <div className="github">
+                         <div>
+                         <a href="https://github.com/GGamal/desokupa" target="_blank" rel="noreferrer"><img className="git" src="img/iconos/mark.png" alt=""/></a>
+                         <p>Front</p>                         
+                         </div>
+                         <div>
+                            <a href="https://github.com/GGamal/desokupa_back" target="_blank" rel="noreferrer"><img className="git" src="img/iconos/mark.png" alt=""/></a>
+                         <p>Back</p>
+                         </div>
+
+                         </div>
+                         
+                        
+                        
                     </div>
 
                     <div className="card">
-                        <img src="img/phanteonp.jpg" alt="" ></img>
+                        <img className="proyectosimg" src="img/gamal_porfolio.jpg" alt="" ></img>
                         <h4>Curriculum</h4>
-                        <p>Loremaasdddddddd</p>
-                        <p>dsadasdddddddasd</p>
-
+                        <p>Este es mi primer Curriculum Vitae, esta hecho con solo HTML y CSS.</p>
+                        <p> El mismo esta adaptado para poder ser visto tambien por el celular</p>
+                        <div className="github">
+                        <div>
+                           <a href="https://github.com/GGamal/CurriculVitae" target="_blank" rel="noreferrer"><img className="git" src="img/iconos/mark.png" alt=""/></a>
+                        </div>
+                        </div>
+                       
+                        
                     </div>
 
                     <div className="card">
-                        <img src="img/phanteon.jpg" alt="" ></img>
+                        <img className="proyectosimg" src="img/phanteon.jpg" alt="" ></img>
                         <h4>tituloooo</h4>
                         <p>Loremaasddddddd</p>
                         <p>asdasssssssssssd</p>
-
+                        <div className="github">
+                        <div>
+                           <a href="https://github.com/GGamal/CurriculVitae" target="_blank" rel="noreferrer"><img className="git" src="img/iconos/mark.png" alt=""/></a>
+                        </div>
+                        </div>
+        
                     </div>
 
                 </div>
